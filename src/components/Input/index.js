@@ -1,11 +1,11 @@
 import { Container } from "./styles";
 
-const Input = () => {
+const Input = ({ valor }) => {
   return (
     <Container>
-        <input/>
+      <input readOnly value={valor} />
     </Container>
-  )
+  );
 };
 
 export default Input;

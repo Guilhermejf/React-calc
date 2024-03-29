@@ -1,11 +1,11 @@
-import { ButtonContainer } from './styles'
+import { ButtonContainer } from "./styles";
 
-const Button = ({label,color}) =>{
-    return(
-        <ButtonContainer background={color}>
-            {label}
-        </ButtonContainer>
-    )
-}
+const Button = ({ label, color, onClick }) => {
+  return (
+    <ButtonContainer onClick={onClick} bgcolor={color}>
+      {label}
+    </ButtonContainer>
+  );
+};
 
 export default Button;
